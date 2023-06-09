@@ -1,11 +1,22 @@
 
     header {
-        height: 10rem;
+        height: auto;
         display: grid;
         place-items: center;
+        grid-template-columns: auto auto;
     }
 
     h1,
     p {
         font-family: sans-serif;
+    }
+
+    img {
+        height: 20rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        header {
+            grid-template-columns: none;
+        }
     }

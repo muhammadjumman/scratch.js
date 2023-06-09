@@ -1,0 +1,11 @@
+
+    header {
+        height: 10rem;
+        display: grid;
+        place-items: center;
+    }
+
+    h1,
+    p {
+        font-family: sans-serif;
+    }

@@ -1,0 +1,34 @@
+<html>
+<header id="header">
+    <h1>Muhammad Jumman</h1>
+    <p>This is a framework in test</p>
+</header>
+
+</html>
+
+<style>
+    header {
+        height: 10rem;
+        display: grid;
+        place-items: center;
+    }
+
+    h1,
+    p {
+        font-family: sans-serif;
+    }
+</style>
+
+<script>
+    const ele = document.querySelector('p')
+    let text = ele.innerText
+    ele.innerText = ''
+    for (i = 0; i < text.length; i++) {
+        (function (i) {
+            setTimeout(() => {
+                ele.innerText += text[i]
+            }, 100 * i)
+        })(i)
+    }
+
+</script>

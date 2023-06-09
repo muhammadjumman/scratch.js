@@ -1,0 +1,27 @@
+{
+  "name": "scratch.js",
+  "version": "1.0.0",
+  "description": "This is awesome framework made by a poor developer, now we don't need to write this weird react syntax",
+  "main": "compailer.js",
+  "scripts": {
+    "dev": "npx onchange \"src/*.html\" \"public/**\"  -- node compailer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammadjumman/scratch.js-.git"
+  },
+  "keywords": [
+    "scratch",
+    "framework",
+    "js"
+  ],
+  "author": "Muhammad Jumman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhammadjumman/scratch.js-/issues"
+  },
+  "homepage": "https://github.com/muhammadjumman/scratch.js-#readme",
+  "devDependencies": {
+    "onchange": "^7.1.0"
+  }
+}

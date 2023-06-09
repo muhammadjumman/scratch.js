@@ -1,0 +1,38 @@
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        background-color: purple;
+        color: white;
+
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+    }
+
+    input {
+        height: 3ch;
+        width: 30ch;
+        margin: 2rem;
+    }
+
+    button {
+
+        cursor: pointer;
+
+    }
+
+    button:hover {
+        background-color: red;
+        transition: all 500ms ease;
+        transform: scale(1.1);
+    }
+
+    label {
+        padding: 2rem;
+        text-transform: capitalize;
+        font-size: 2rem;
+    }

@@ -1,0 +1,72 @@
+<html>
+<footer id="footer">
+    <label for="name">Enter your name</label>
+    <div>
+        <input type="text" id="name">
+        <button>Submit</button>
+    </div>
+</footer>
+
+</html>
+
+<style>
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        background-color: purple;
+        color: white;
+
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+    }
+
+    input {
+        height: 3ch;
+        width: 30ch;
+        margin: 2rem;
+    }
+
+    button {
+
+        cursor: pointer;
+
+    }
+
+    button:hover {
+        background-color: red;
+        transition: all 500ms ease;
+        transform: scale(1.1);
+    }
+
+    label {
+        padding: 2rem;
+        text-transform: capitalize;
+        font-size: 2rem;
+    }
+</style>
+
+<script>
+    const input = document.querySelector('#name')
+    const btn = document.querySelector('button')
+    btn.onclick = (e) => {
+        let element = document.createElement('h3')
+        element.innerText = input.value
+        input.value = ''
+        let head = document.querySelector('header')
+        head.append(element)
+    }
+    input.onkeypress = (e) => {
+        if (e.key === "Enter" || e.keyCode === 13) {
+            let element = document.createElement('h3');
+            element.innerText = input.value;
+            input.value = '';
+            let head = document.querySelector('header');
+            head.append(element);
+        }
+    };
+
+</script>

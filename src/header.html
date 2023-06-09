@@ -1,21 +1,36 @@
 <html>
 <header id="header">
-    <h1>Muhammad Jumman</h1>
-    <p>This is a framework in test</p>
+    <div class="header-hero">
+
+        <h1>Muhammad Jumman</h1>
+        <p>This is a framework in test</p>
+    </div>
+    <img src="/meme.png" alt="meme">
 </header>
 
 </html>
 
 <style>
     header {
-        height: 10rem;
+        height: auto;
         display: grid;
         place-items: center;
+        grid-template-columns: auto auto;
     }
 
     h1,
     p {
         font-family: sans-serif;
+    }
+
+    img {
+        height: 20rem;
+    }
+
+    @media screen and (max-width: 450px) {
+        header {
+            grid-template-columns: none;
+        }
     }
 </style>
 

@@ -4,7 +4,7 @@
   "description": "This is awesome framework made by a poor developer, now we don't need to write this weird react syntax",
   "main": "compailer.js",
   "scripts": {
-    "dev": "npx onchange \"src/*.html\" \"public/**\"  -- node compailer.js"
+    "dev": "npx onchange \"src/*.html\" \"public/**\" \"index.html\" -- node compailer.js"
   },
   "repository": {
     "type": "git",
